@@ -15,10 +15,8 @@ def trackPhone(x1,y1,r1,x2,y2,r2,x3,y3,r3):
 
 #Generate and represent data to be used by the trilateration algorithm
 x1,y1,r1,x2,y2,r2,x3,y3,r3 = draw.drawCellTowers()
-
 #Apply trilateration algorithm to locate phone
 x,y = trackPhone(x1,y1,r1,x2,y2,r2,x3,y3,r3)
-
 #Output phone location / coordinates
 print("Cell Phone Location:")
 print(x,y)
